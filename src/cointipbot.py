@@ -561,8 +561,8 @@ class CointipBot(object):
                 self.expire_pending_tips()
 
                 # Check subreddit comments for tips
-                if self.conf.reddit.scan.my_subreddits or hasattr(self.conf.reddit.scan, 'these_subreddits'):
-                    self.check_subreddits()
+                #if self.conf.reddit.scan.my_subreddits or hasattr(self.conf.reddit.scan, 'these_subreddits'):
+                #    self.check_subreddits()
 
                 # Sleep
                 lg.debug("CointipBot::main(): sleeping for %s seconds...", self.conf.misc.times.sleep_seconds)
